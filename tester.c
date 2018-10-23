@@ -13,14 +13,11 @@ int main(){
 
   write(desc, content, n);
   int i;
-  printf("\n Here are the contents of the file read into a char *\n");
-
-  for(i = 0; i < 100; i++){
-    printf("%c", content[i]);
-  }
-  
-  printf("\n\n");
-    
+  printf("\n Here are the contents written into the file:\n %s\n", test_string);
+  char * content_again = malloc(100);
+  printf("\nHere are the contents of the file read back:\n");
+  read(desc, content_again, n);
+  printf("%s\n\n", content_again);
 
   close(desc);
   return 0;
