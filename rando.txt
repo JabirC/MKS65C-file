@@ -1,1 +1,1 @@
-this is the test string qwertyuiop
+This is the original text inside rando.txt.
